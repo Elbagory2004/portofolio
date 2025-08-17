@@ -1,19 +1,86 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --brand: #7C83FD;
+  --brand-contrast: #ffffff;
+  --accent: #7dedff;
+  --bg: #ffffff;
+  --text: #212529;
+  --surface: #ffffff;
+  --muted: #6c757d;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+body.dark-theme {
+  --bg: #0d1117;
+  --text: #e6edf3;
+  --surface: #161b22;
+  --brand: #8aa0ff;
+  --accent: #0f3f56;
+  --brand-contrast: #ffffff;
+}
+
+.navbar {
+  background-color: var(--brand) !important;
+}
+
+.site-footer {
+  background-color: var(--brand);
+}
 
 .jumbotron {
   padding-top: 6rem;
-  background-color: #7dedff;
+  background-color: var(--accent);
 }
 
 #talents {
-  background-color: #7dedff;
+  background-color: var(--accent);
 }
 
 section {
   padding-top: 5rem;
 }
+
 .skill-icon {
   width: 20px;
   height: 20px;
   margin-right: 5px;
   vertical-align: text-top;
+}
+
+.card {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+.btn-primary {
+  background-color: var(--brand);
+  border-color: var(--brand);
+  color: var(--brand-contrast);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #6a72ff;
+  border-color: #6a72ff;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  z-index: 1030;
 }
