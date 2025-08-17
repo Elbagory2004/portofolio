@@ -3,8 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of ENG/Ibrahim Mohamed Youssef — AI Developer focused on Machine Learning and Data Analysis. Projects, skills, education, and contact.">
+    <meta name="author" content="Ibrahim Mohamed Youssef">
+    <meta name="theme-color" content="#7C83FD">
+    <meta property="og:title" content="ENG/Ibrahim Mohamed Youssef | AI Developer">
+    <meta property="og:description" content="Machine Learning and Data Analysis projects, skills, and contact.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img.jpg">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary_large_image">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="icon" href="img.jpg" type="image/jpeg">
     <link rel="stylesheet" href="style.css">
     <title>My Portfolio | ENG/Ibrahim Mohamed Youssef</title>
     <style>
@@ -30,12 +40,27 @@
         vertical-align: text-top;
       }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ibrahim Mohamed Youssef",
+      "jobTitle": "AI Developer",
+      "image": "img.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/ibrahim-mohamed-26303434a",
+        "https://github.com/Elbagory2004",
+        "https://www.kaggle.com/ibrahimelbagory2004"
+      ],
+      "email": "mailto:elbagory013@gmail.com"
+    }
+    </script>
   </head>
   <body id="home">
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #7C83FD">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
       <div class="container"> 
         <a class="navbar-brand" href="#">ENG/Ibrahim Mohamed Youssef</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -49,14 +74,23 @@
             <li class="nav-item"><a class="nav-link" href="#trainings">Trainings</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
+          <div class="ms-lg-3 d-flex gap-2">
+            <button id="themeToggle" class="btn btn-outline-light btn-sm" type="button" aria-label="Toggle theme">
+              <i class="bi bi-moon-stars"></i>
+            </button>
+          </div>
         </div>
       </div>
     </nav>
 
     <section class="jumbotron text-center">
-      <img src="img.jpg" alt="Ibrahim Mohamed Youssef" width="300" class="rounded-circle img-thumbnail">
+      <img src="img.jpg" alt="Ibrahim Mohamed Youssef" width="300" class="rounded-circle img-thumbnail" decoding="async">
       <h1 class="display-4">ENG/Ibrahim Mohamed Youssef</h1>
       <p class="lead">AI Developer | Data Analysis | Machine Learning</p>
+      <div class="mt-3">
+        <a href="#projects" class="btn btn-primary me-2">View Projects</a>
+        <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
+      </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,85.3C96,75,192,53,288,53.3C384,53,480,75,576,106.7C672,139,768,181,864,181.3C960,181,1056,139,1152,117.3C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
 
@@ -138,6 +172,9 @@
                   <span class="badge bg-primary tech-badge">Matplotlib</span>
                 </div>
                 <p class="card-text"><small class="text-muted">Implemented regression models to forecast gold prices with high accuracy.</small></p>
+                <div class="d-flex gap-2">
+                  <a class="btn btn-sm btn-outline-primary" href="https://github.com/Elbagory2004" target="_blank" rel="noopener">GitHub</a>
+                </div>
               </div>
             </div>
           </div>
@@ -155,6 +192,9 @@
                   <span class="badge bg-primary tech-badge">Seaborn</span>
                 </div>
                 <p class="card-text"><small class="text-muted">Compared multiple regression algorithms to select the best model.</small></p>
+                <div class="d-flex gap-2">
+                  <a class="btn btn-sm btn-outline-primary" href="https://github.com/Elbagory2004" target="_blank" rel="noopener">GitHub</a>
+                </div>
               </div>
             </div>
           </div>
@@ -172,6 +212,9 @@
                   <span class="badge bg-primary tech-badge">Flask</span>
                 </div>
                 <p class="card-text"><small class="text-muted">Developed a predictive model for accurate healthcare cost estimation.</small></p>
+                <div class="d-flex gap-2">
+                  <a class="btn btn-sm btn-outline-primary" href="https://github.com/Elbagory2004" target="_blank" rel="noopener">GitHub</a>
+                </div>
               </div>
             </div>
           </div>
@@ -268,8 +311,8 @@
               </button>
             </form>
             <div class="mt-4">
-              <p class="mb-1"><strong>Email:</strong> elbagory013@gmail.com</p>
-              <p><strong>Phone:</strong> 01024033329</p>
+              <p class="mb-1"><strong>Email:</strong> <a href="mailto:elbagory013@gmail.com">elbagory013@gmail.com</a></p>
+              <p><strong>Phone:</strong> <a href="tel:+201024033329">01024033329</a></p>
             </div>
           </div>
         </div>
@@ -277,14 +320,16 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7C83FD" fill-opacity="1" d="M0,256L48,250.7C96,245,192,235,288,208C384,181,480,139,576,133.3C672,128,768,160,864,170.7C960,181,1056,171,1152,170.7C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
 
-    <footer class="text-white text-center pb-5" style="background-color: #7C83FD;">
-      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.linkedin.com/in/ibrahim-mohamed-26303434a" class="text-white fw-bold">Ibrahim Mohamed Youssef</a></p>
+    <footer class="site-footer text-white text-center pb-5">
+      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.linkedin.com/in/ibrahim-mohamed-26303434a" class="text-white fw-bold" target="_blank" rel="noopener">Ibrahim Mohamed Youssef</a></p>
       <div>
-        <a href="https://www.linkedin.com/in/ibrahim-mohamed-26303434a" target="_blank" class="text-white me-3"><i class="bi bi-linkedin" style="font-size: 1.5rem;"></i></a>
-        <a href="https://github.com/Elbagory2004" target="_blank" class="text-white me-3"><i class="bi bi-github" style="font-size: 1.5rem;"></i></a>
-        <a href="https://www.kaggle.com/ibrahimelbagory2004" target="_blank" class="text-white"><i class="bi bi-bar-chart-line-fill" style="font-size: 1.5rem;"></i></a>
+        <a href="https://www.linkedin.com/in/ibrahim-mohamed-26303434a" target="_blank" class="text-white me-3" rel="noopener"><i class="bi bi-linkedin" style="font-size: 1.5rem;"></i></a>
+        <a href="https://github.com/Elbagory2004" target="_blank" class="text-white me-3" rel="noopener"><i class="bi bi-github" style="font-size: 1.5rem;"></i></a>
+        <a href="https://www.kaggle.com/ibrahimelbagory2004" target="_blank" class="text-white" rel="noopener"><i class="bi bi-bar-chart-line-fill" style="font-size: 1.5rem;"></i></a>
       </div>
     </footer>
+
+    <button id="backToTop" class="btn btn-primary back-to-top d-none" type="button" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
@@ -308,6 +353,51 @@
           })
           .catch(error => console.error('Error!', error.message));
       });
+
+      // Theme toggle with persistence
+      const themeToggle = document.getElementById('themeToggle');
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const savedTheme = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
+      if (savedTheme === 'dark') {
+        document.body.classList.add('dark-theme');
+      }
+      function updateThemeIcon() {
+        themeToggle.innerHTML = document.body.classList.contains('dark-theme') ? '<i class="bi bi-sun"></i>' : '<i class="bi bi-moon-stars"></i>';
+      }
+      updateThemeIcon();
+      themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-theme');
+        localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
+        updateThemeIcon();
+      });
+
+      // Back to top button
+      const backBtn = document.getElementById('backToTop');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) {
+          backBtn.classList.remove('d-none');
+        } else {
+          backBtn.classList.add('d-none');
+        }
+      });
+      backBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // Scroll spy to highlight active nav link
+      const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+      const sections = Array.from(navLinks).map(link => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const id = '#' + entry.target.id;
+          const link = document.querySelector('.navbar-nav .nav-link[href="' + id + '"]');
+          if (entry.isIntersecting) {
+            navLinks.forEach(l => l.classList.remove('active'));
+            if (link) link.classList.add('active');
+          }
+        });
+      }, { rootMargin: '-50% 0px -50% 0px', threshold: 0 });
+      sections.forEach(sec => observer.observe(sec));
     </script>
   </body>
 </html>
